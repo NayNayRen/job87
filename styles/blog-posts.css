@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-*{
+* {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body{
-  background-color: rgba(0,0,0,0.75);
+body {
+  background-color: rgba(0, 0, 0, 0.75);
   height: 100vh;
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
@@ -13,44 +14,53 @@ body{
   padding: 0;
 }
 
-.blog-post{
+.blog-post {
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
   background-color: #fff;
-  box-shadow: 0 0 20px 10px rgba(0,0,0,0.75);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
   height: 100%;
   padding: 20px;
   width: 80%;
 }
-.blog-post a{
-  color: rgba(0,0,255,1);
+
+.blog-post a {
+  -webkit-transition: color 150ms ease;
+  color: rgba(0, 0, 255, 1);
   transition: color 150ms ease;
 }
-.blog-post a:hover{
-  color: rgba(0,0,255,0.5);
+
+.blog-post a:hover {
+  color: rgba(0, 0, 255, 0.5);
 }
-.blog-post h1{
-  color: rgba(0,0,255,1);
+
+.blog-post h1 {
+  color: rgba(0, 0, 255, 1);
   font-size: 45px;
   margin: 0 auto;
   max-width: 75%;
-  text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
 }
-.blog-post p{
+
+.blog-post p {
   font-size: 18px;
   margin: 0 auto;
   max-width: 75%;
   text-indent: 20px;
 }
-.blog-post ol{
+
+.blog-post ol {
   font-size: 18px;
   margin: 0 auto;
   max-width: 75%;
-  text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
 }
-.blog-post li{
+
+.blog-post li {
   list-style-type: none;
-  color: rgba(0,0,255,1);
+  color: rgba(0, 0, 255, 1);
 }
-.blog-post ol li::before{
+
+.blog-post ol li::before {
   content: '~';
   color: #000;
   font-weight: bold;
@@ -58,149 +68,174 @@ body{
   padding: 0 10px;
 }
 
-.blog-quote{
-  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
-  display: flex;
+.blog-quote {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
   margin: 50px 0;
   outline: solid 1px #fff;
   max-width: 500px;
 }
-.blog-quote img{
+
+.blog-quote img {
   width: 100%;
 }
 
-.fa-meh-o, .fa-flag-o{
-  color: rgba(0,0,255,1);
+.fa-meh-o, .fa-flag-o {
+  color: rgba(0, 0, 255, 1);
   font-size: 20px;
   margin-left: -15px;
 }
 
-.footer{
+.footer {
   border-top: solid 1px #000;
   margin: 0 auto;
   max-width: 75%;
   text-align: center;
 }
 
-iframe{
-  border: solid 1px #fff;;
-  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+iframe {
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border: solid 1px #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   height: 350px;
   width: 600px;
 }
-.iframe-container{
+
+.iframe-container {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  margin: 40px 0;
   justify-content: center;
+  margin: 40px 0;
 }
 
-.main-container{
+.main-container {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
   align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-.social-media{
-  border-top: solid 1px rgba(0,0,0,0.85);
+.social-media {
+  -ms-flex-pack: distribute;
+  border-top: solid 1px rgba(0, 0, 0, 0.85);
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   max-width: 75%;
   padding: 20px;
 }
-.social-media i{
+
+.social-media i {
+  -webkit-transition: color 150ms ease;
+  color: rgb(227, 24, 55);
   font-size: 50px;
   margin: 0 30px;
-  text-shadow: 0px 1px 0px rgba(0,0,0,1),
-  0px -1px 0px rgba(0,0,0,1),
-  1px 0px 0px rgba(0,0,0,1),
-  -1px 0px 0px rgba(0,0,0,1);
-  transition: all 100ms ease-in;
-}
-.social-media i:hover{
-  color: rgba(0,0,255,1);
-  cursor: pointer;
-  transform: scale(1.2);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 1),
+    0px -1px 0px rgba(0, 0, 0, 1),
+    1px 0px 0px rgba(0, 0, 0, 1),
+    -1px 0px 0px rgba(0, 0, 0, 1);
+  transition: color 150ms ease;
 }
 
-.sources-container{
+.social-media i:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.sources-container {
   border-top: solid 1px #000;
   margin: 0 auto 20px auto;
   max-width: 75%;
   text-align: left;
 }
-.sources-container h2{
-  color: rgba(0,0,255,1);
+
+.sources-container h2 {
+  color: rgba(0, 0, 255, 1);
   font-size: 30px;
   margin: 0 auto 5px auto;
-  text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
 }
 
 @media (max-width: 1000px) {
-
-  .blog-post{
+  .blog-post {
     padding: 20px;
     width: 90%;
   }
-  .blog-post p, .blog-post h1, .blog-post ol, .footer, .social-media, .sources-container{
+
+  .blog-post p, .blog-post h1, .blog-post ol, .footer, .social-media, .sources-container {
     max-width: 85%;
   }
-  .blog-post p, .blog-post ol, .footer, .sources-container span{
+
+  .blog-post p, .blog-post ol, .footer, .sources-container span {
     font-size: 16px;
   }
-  .blog-post h1{
+
+  .blog-post h1 {
     font-size: 30px;
   }
 
-  .blog-quote{
+  .blog-quote {
     margin: 30px 0;
     max-width: 500px;
   }
 
-  iframe{
+  iframe {
     height: 300px;
     width: 500px;
   }
 
-  .sources-container h2{
+  .sources-container h2 {
     font-size: 20px;
   }
 }
 
-@media (max-width: 600px) {
-
-  .blog-post{
+@media (max-width: 700px) {
+  .blog-post {
     padding: 10px;
     width: 100%;
   }
-  .blog-post p, .blog-post h1, .blog-post ol, .footer, .social-media, .sources-container{
+
+  .blog-post p, .blog-post h1, .blog-post ol, .footer, .social-media, .sources-container {
     max-width: 95%;
   }
-  .blog-post p, .blog-post ol, .footer, .sources-container span{
+
+  .blog-post p, .blog-post ol, .footer, .sources-container span {
     font-size: 15px;
   }
-  .blog-post h1{
+
+  .blog-post h1 {
     font-size: 25px;
   }
-  .blog-post ol{
+
+  .blog-post ol {
     margin-left: -20px;
   }
 
-  .blog-quote{
+  .blog-quote {
     margin: 0 0 10px 0;
   }
 
-  iframe{
+  iframe {
     height: 250px;
     width: 400px;
   }
-  
-  .iframe-container{
+
+  .iframe-container {
     margin: 10px 0;
   }
 
-  .social-media i{
+  .social-media i {
     font-size: 30px;
     margin: 0 20px;
     text-shadow: none;
