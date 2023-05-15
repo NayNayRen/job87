@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 @keyframes fadeIn {
   0% {
@@ -17,9 +17,15 @@
 
 .about {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/books.jpeg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/books.jpeg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/books.jpeg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/books.jpeg");
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/books.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/books.jpeg");
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
@@ -33,9 +39,15 @@
 
 .blog {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/blog.jpeg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/blog.jpeg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/blog.jpeg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/blog.jpeg");
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/blog.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/blog.jpeg");
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
@@ -154,7 +166,7 @@
 
 body {
   background-color: #000;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -212,9 +224,15 @@ iframe {
 
 .innovation {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/innovation.jpg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/innovation.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/innovation.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/innovation.jpg");
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/innovation.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/innovation.jpg");
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
@@ -226,9 +244,7 @@ iframe {
   color: rgba(0, 102, 255, 1);
   font-size: 25px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #000,
-    0px -1px 0px #000,
-    1px 0px 0px #000,
+  text-shadow: 0px 1px 0px #000, 0px -1px 0px #000, 1px 0px 0px #000,
     -1px 0px 0px #000;
   transition: opacity 150ms ease;
 }
@@ -240,9 +256,15 @@ iframe {
 
 .intro {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/books.jpeg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/books.jpeg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/books.jpeg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/books.jpeg");
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/books.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/books.jpeg");
   background-position: center;
   background-size: cover;
   margin-bottom: 75px;
@@ -304,7 +326,14 @@ iframe {
   font-size: 18px;
 }
 
-.intro, .landing, .blog, .podcast, .portfolio, .innovation, .learning, .about {
+.intro,
+.landing,
+.blog,
+.podcast,
+.portfolio,
+.innovation,
+.learning,
+.about {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
@@ -312,14 +341,18 @@ iframe {
   height: 100%;
   padding-bottom: 10px;
   text-align: center;
-  text-shadow: -1px 1px 1px #000,
-    1px 1px 1px #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 0px 20px #000;
+  text-shadow: -1px 1px 1px #000, 1px 1px 1px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 0px 20px #000;
 }
 
-.intro p, .landing p, .blog p, .podcast p, .portfolio p, .innovation p, .learning p, .about p {
+.intro p,
+.landing p,
+.blog p,
+.podcast p,
+.portfolio p,
+.innovation p,
+.learning p,
+.about p {
   font-size: 25px;
   margin: 0 auto 20px auto;
   width: 75%;
@@ -331,9 +364,15 @@ iframe {
 
 .learning {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/book.jpeg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/book.jpeg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/book.jpeg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/book.jpeg");
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/book.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/book.jpeg");
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
@@ -350,9 +389,7 @@ iframe {
   font-size: 25px;
   list-style-type: none;
   margin: 20px 0;
-  text-shadow: 0px 1px 0px #000,
-    0px -1px 0px #000,
-    1px 0px 0px #000,
+  text-shadow: 0px 1px 0px #000, 0px -1px 0px #000, 1px 0px 0px #000,
     -1px 0px 0px #000;
   transition: all 150ms ease;
 }
@@ -364,7 +401,7 @@ iframe {
 }
 
 .learning ol li::before {
-  content: '~';
+  content: "~";
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -407,7 +444,7 @@ iframe {
 .nav-link {
   -webkit-transition: color 150ms ease;
   color: #fff;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 25px;
   text-decoration: none;
   transition: color 150ms ease;
@@ -420,9 +457,15 @@ iframe {
 
 .podcast {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/podcast.jpeg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/podcast.jpeg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)), url('../img/podcast.jpeg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/podcast.jpeg");
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../img/podcast.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+    url("../img/podcast.jpeg");
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
@@ -450,7 +493,7 @@ iframe {
   -webkit-box-orient: vertical;
   align-items: center;
   background-attachment: fixed;
-  background-image: url('../img/portfolio.jpeg');
+  background-image: url("../img/portfolio.jpeg");
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
@@ -497,9 +540,7 @@ iframe {
   -webkit-transition: all 150ms ease;
   color: rgb(227, 24, 55);
   font-size: 45px;
-  text-shadow: 0px 1px 0px #000,
-    0px -1px 0px #000,
-    1px 0px 0px #000,
+  text-shadow: 0px 1px 0px #000, 0px -1px 0px #000, 1px 0px 0px #000,
     -1px 0px 0px #000;
   transition: all 150ms ease;
 }
@@ -509,7 +550,25 @@ iframe {
   cursor: pointer;
 }
 
-@media(max-width: 1300px) {
+.up-arrow {
+  align-items: center;
+  background-color: #fff;
+  border: solid 1px #000;
+  border-radius: 50%;
+  bottom: 10px;
+  color: #000;
+  display: flex;
+  font-size: 28px;
+  height: 40px;
+  justify-content: center;
+  position: fixed;
+  right: -50px;
+  text-decoration: none;
+  transition: right 250ms ease;
+  width: 40px;
+}
+
+@media (max-width: 1300px) {
   .blog-link {
     font-size: 20px;
   }
@@ -522,7 +581,14 @@ iframe {
     font-size: 40px;
   }
 
-  .intro p, .landing p, .blog p, .podcast p, .portfolio p, .innovation p, .learning p, .about p {
+  .intro p,
+  .landing p,
+  .blog p,
+  .podcast p,
+  .portfolio p,
+  .innovation p,
+  .learning p,
+  .about p {
     font-size: 20px;
   }
 
@@ -535,13 +601,12 @@ iframe {
   }
 
   .social-media-container {
-    padding: 80px 0 0 10px
+    padding: 80px 0 0 10px;
   }
 }
 
-@media(max-width: 700px) {
-
-  .blog{
+@media (max-width: 700px) {
+  .blog {
     width: 100%;
   }
 
@@ -570,7 +635,14 @@ iframe {
     width: 500px;
   }
 
-  .intro p, .landing p, .blog p, .podcast p, .portfolio p, .innovation p, .learning p, .about p {
+  .intro p,
+  .landing p,
+  .blog p,
+  .podcast p,
+  .portfolio p,
+  .innovation p,
+  .learning p,
+  .about p {
     font-size: 16px;
     width: 85%;
   }
@@ -639,7 +711,7 @@ iframe {
   }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .about img {
     max-width: 200px;
   }

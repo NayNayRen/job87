@@ -1,15 +1,22 @@
-const nav = document.querySelector('.nav-box');
-const scrollPoint = document.querySelector('#scroll-point');
-
-/*function fixedNav() {
-  if (document.documentElement.scrollTop > 0) {// scroll point in pixels to start the fixed position
-    nav.classList.add('fixed');
-    scrollPoint.style.paddingTop = '75px';
-  } else {
-    nav.classList.remove('fixed');
-    scrollPoint.style.paddingTop = '75px';
+// FUNCTIONS LOADS AND ACTIVATES UP ARROW ACTIONS
+function loadUpArrow() {
+  const upArrow = document.querySelector(".up-arrow");
+  function activateUpArrow() {
+    if (document.documentElement.scrollTop > 0) {
+      upArrow.style.right = "10px";
+    } else {
+      upArrow.style.right = "-50px";
+    }
   }
-
+  // ON SCROLL
+  window.addEventListener("scroll", () => {
+    activateUpArrow();
+  });
+  // ON RESIZE
+  window.addEventListener("resize", () => {
+    activateUpArrow();
+  });
+  // ON LOAD
+  activateUpArrow();
 }
-
-window.addEventListener('scroll', fixedNav);*/
+window.onload = loadUpArrow;
