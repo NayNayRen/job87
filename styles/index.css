@@ -10,11 +10,6 @@
   }
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .about {
   background-attachment: fixed;
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
@@ -163,10 +158,6 @@
 body {
   background-color: #000;
   font-family: "Ubuntu", sans-serif;
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
   position: relative;
 }
 
@@ -202,19 +193,11 @@ body {
 .footer-logo {
   margin: 10px auto 0 auto;
   width: 50px;
-  /* outline: solid 1px blue; */
 }
 
 .footer-logo img {
   height: auto;
   width: 100%;
-}
-
-html {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
 }
 
 h3 {
@@ -271,7 +254,6 @@ iframe {
   background-position: center;
   background-size: cover;
   margin-bottom: 75px;
-  /* outline: solid 1px blue; */
 }
 
 .intro button {
@@ -288,7 +270,7 @@ iframe {
   font-size: 16px;
   height: 30px;
   margin-left: -5px;
-  padding: 4px 10px;
+  padding: 0 10px;
   position: relative;
   transition: all 150ms ease-in;
 }
@@ -363,7 +345,7 @@ iframe {
 }
 
 .landing {
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 .learning {
@@ -416,7 +398,6 @@ iframe {
 
 .main {
   min-height: 100%;
-  width: 100%;
 }
 
 .nav-box {
@@ -437,14 +418,15 @@ iframe {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: auto;
   justify-content: space-evenly;
   left: 50%;
   padding: 20px;
   position: fixed;
   top: 10px;
   transform: translateX(-50%);
-  width: 75%;
-  z-index: 100;
+  width: 85%;
+  z-index: 10;
 }
 
 .nav-link {
@@ -452,7 +434,7 @@ iframe {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   font-size: 25px;
-  margin: 0 5px;
+  margin: 0 15px;
   text-decoration: none;
   transition: color 150ms ease;
 }
@@ -536,9 +518,11 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 30px 0 0 10px;
+  left: 10px;
   position: fixed;
+  top: 120px;
   z-index: 1;
+  /* outline: solid 1px blue; */
 }
 
 .social-media-container i {
@@ -611,10 +595,6 @@ iframe {
   .nav-link {
     font-size: 20px;
   }
-
-  .social-media-container {
-    padding: 80px 0 0 10px;
-  }
 }
 
 @media (max-width: 700px) {
@@ -680,6 +660,10 @@ iframe {
     font-size: 14px;
   }
 
+  .landing {
+    padding-top: 125px;
+  }
+
   .learning li {
     font-size: 18px;
     margin: 10px 0;
@@ -694,16 +678,13 @@ iframe {
     border-radius: 0;
     border-right: none;
     border-top: none;
-    box-shadow: none;
-    /* left: 0; */
-    padding: 25px 15px;
+    /* padding: 5px 10px; */
     top: 0;
     width: 100%;
   }
 
   .nav-link {
-    font-size: 18px;
-    margin: 5px 10px;
+    font-size: 16px;
   }
 
   .portfolio-link {
@@ -711,9 +692,15 @@ iframe {
   }
 
   .social-media-container {
+    -ms-flex-direction: row;
+    -ms-flex-pack: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
     flex-direction: row;
     justify-content: center;
-    padding: 75px 0 0 10px;
+    left: 0;
+    top: 100px;
     width: 100%;
   }
 
@@ -778,7 +765,7 @@ iframe {
   }
 
   .landing {
-    padding-top: 125px;
+    padding-top: 150px;
   }
 
   .learning li {
@@ -790,6 +777,6 @@ iframe {
   }
 
   .social-media-container {
-    padding: 100px 0 0 10px;
+    top: 125px;
   }
 }
