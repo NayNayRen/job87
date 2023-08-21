@@ -19,17 +19,38 @@
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
+  position: relative;
+}
+
+.about-image {
+  align-items: center;
+  border: solid 1px #fff;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 350px;
 }
 
 .about img {
-  border: solid 1px #fff;
-  margin-bottom: 20px;
-  max-width: 400px;
+  height: auto;
+  width: 100%;
+}
+
+#about,
+#blog,
+#innovation,
+#learning,
+#podcast,
+#portfolio {
+  left: 0;
+  position: absolute;
+  top: -30px;
 }
 
 .blog {
   border-top: solid 1px #fff;
   padding: 75px 0;
+  position: relative;
 }
 
 .blog-admin {
@@ -194,6 +215,7 @@ h3 {
 .innovation {
   border-top: solid 1px #fff;
   padding: 75px 0;
+  position: relative;
 }
 
 .innovation a {
@@ -311,6 +333,7 @@ h3 {
 .learning {
   border-top: solid 1px #fff;
   padding: 75px 0;
+  position: relative;
 }
 
 .learning a {
@@ -409,6 +432,7 @@ h3 {
 .podcast {
   border-top: solid 1px #fff;
   padding: 75px 0;
+  position: relative;
 }
 
 .podcast i {
@@ -436,6 +460,7 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 75px 0;
+  position: relative;
 }
 
 .portfolio-link {
@@ -518,7 +543,7 @@ h3 {
   }
 
   .container-title {
-    font-size: 55px;
+    font-size: 52px;
   }
 
   h3 {
@@ -545,6 +570,20 @@ h3 {
 }
 
 @media (max-width: 700px) {
+
+  .about-image {
+    width: 300px;
+  }
+
+  #about,
+  #blog,
+  #innovation,
+  #learning,
+  #podcast,
+  #portfolio {
+    top: -135px;
+  }
+
   .blog {
     width: 100%;
   }
@@ -579,7 +618,7 @@ h3 {
   }
 
   .container-title {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   h3 {
@@ -627,20 +666,14 @@ h3 {
     margin: 10px 0;
   }
 
-  /* .learning ol {
-    text-align: left;
-  } */
-
   .learning li:hover {
     color: #fff;
     transform: scale(1)
   }
 
   .nav-box {
-    border-left: none;
+    border: none;
     border-radius: 0;
-    border-right: none;
-    border-top: none;
     box-shadow: none;
     top: 0;
     width: 100%;
@@ -660,13 +693,15 @@ h3 {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -webkit-box-pack: center;
+    -webkit-box-shadow: 0 5px 20px #000;
     background-color: #000;
     border-bottom: solid 1px #fff;
+    box-shadow: 0 5px 20px #000;
     flex-direction: row;
     justify-content: center;
     left: 0;
-    padding: 25px 0 15px 0;
-    top: 85px;
+    padding: 20px 0 10px 0;
+    top: 80px;
     width: 100%;
   }
 
@@ -677,17 +712,22 @@ h3 {
 }
 
 @media (max-width: 400px) {
-  .about img {
+  .about-image {
     width: 200px;
+  }
+
+  #about,
+  #blog,
+  #innovation,
+  #learning,
+  #podcast,
+  #portfolio {
+    top: -155px;
   }
 
   .blog-admin {
     font-size: 14px;
   }
-
-  /* .blog-container img:hover {
-    transform: none;
-  } */
 
   .blog-container span:nth-child(even) {
     border-left: none;
@@ -713,6 +753,10 @@ h3 {
     position: relative;
   }
 
+  .container-title {
+    font-size: 32px;
+  }
+
   .fa-arrow-down {
     font-size: 20px;
   }
@@ -729,15 +773,15 @@ h3 {
     padding: 185px 0 25px 0;
   }
 
-  /* .learning li {
-    font-size: 16px;
-  } */
+  .nav-box {
+    padding: 20px 20px 5px 20px;
+  }
 
   .portfolio-link {
     font-size: 18px;
   }
 
   .social-media-container {
-    top: 110px;
+    top: 100px;
   }
 }
