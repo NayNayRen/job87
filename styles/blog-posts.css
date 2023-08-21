@@ -1,23 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: rgba(0, 0, 0, 0.75);
-  height: 100vh;
-  font-family: "Ubuntu", sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
+  background-color: #333333;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .blog-post {
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   background-color: #fff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   height: 100%;
   padding: 20px;
   width: 80%;
@@ -37,27 +26,26 @@ body {
   color: rgba(0, 0, 255, 1);
   font-size: 45px;
   margin: 0 auto;
-  max-width: 75%;
-  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75); */
+  width: 75%;
 }
 
 .blog-post p {
   font-size: 18px;
   margin: 0 auto;
-  max-width: 75%;
   text-indent: 20px;
+  width: 75%;
 }
 
 .blog-post ol {
   font-size: 18px;
   margin: 0 auto;
-  max-width: 75%;
-  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75); */
+  width: 75%;
 }
 
 .blog-post li {
   list-style-type: none;
-  color: rgba(0, 0, 255, 1);
+  color: rgba(0, 102, 255, 1);
+  /* outline: solid 1px red; */
 }
 
 .blog-post ol li::before {
@@ -69,13 +57,14 @@ body {
 }
 
 .blog-quote {
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
-  margin: 50px 0;
+  box-shadow: 0 10px 10px #000;
+  margin: 50px auto;
   outline: solid 1px #fff;
-  max-width: 500px;
+  width: 500px;
 }
 
 .blog-quote img {
+  height: 100%;
   width: 100%;
 }
 
@@ -87,21 +76,25 @@ body {
 }
 
 .footer {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   background-color: #000;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   color: #fff;
   font-size: 18px;
-  margin: auto;
-  padding: 5px 0;
+  margin: 0 auto;
+  padding: 15px;
   text-align: center;
   width: 80%;
 }
 
-html {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+.footer-logo {
+  margin: 10px auto 0 auto;
+  width: 50px;
+}
+
+.footer-logo img {
+  height: auto;
+  width: 100%;
 }
 
 iframe {
@@ -144,17 +137,16 @@ iframe {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  max-width: 75%;
+  width: 75%;
   padding: 20px;
 }
 
 .social-media i {
   -webkit-transition: color 150ms ease;
-  color: rgb(227, 24, 55);
+  color: #B22222;
   font-size: 50px;
   margin: 0 30px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 1), 0px -1px 0px rgba(0, 0, 0, 1),
-    1px 0px 0px rgba(0, 0, 0, 1), -1px 0px 0px rgba(0, 0, 0, 1);
+  text-shadow: 0 1px 1px #000;
   transition: color 150ms ease;
 }
 
@@ -166,7 +158,7 @@ iframe {
 .sources-container {
   border-top: solid 1px #000;
   margin: 0 auto 20px auto;
-  max-width: 75%;
+  width: 75%;
   text-align: left;
 }
 
@@ -174,16 +166,24 @@ iframe {
   color: rgba(0, 0, 255, 1);
   font-size: 30px;
   margin: 0 auto 5px auto;
-  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75); */
 }
 
 .up-arrow {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-transition: right 250ms ease;
   align-items: center;
   background-color: #fff;
-  border: solid 1px #000;
   border-radius: 50%;
+  /* border: solid 1px #000; */
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   bottom: 10px;
   color: #000;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   font-size: 28px;
   height: 40px;
@@ -206,7 +206,7 @@ iframe {
   .blog-post ol,
   .social-media,
   .sources-container {
-    max-width: 85%;
+    width: 85%;
   }
 
   .blog-post p,
@@ -220,8 +220,8 @@ iframe {
   }
 
   .blog-quote {
-    margin: 30px 0;
-    max-width: 500px;
+    margin: 30px auto;
+    width: 400px;
   }
 
   .footer {
@@ -241,7 +241,7 @@ iframe {
 
 @media (max-width: 700px) {
   .blog-post {
-    padding: 10px;
+    padding: 15px;
     width: 100%;
   }
 
@@ -250,29 +250,20 @@ iframe {
   .blog-post ol,
   .social-media,
   .sources-container {
-    max-width: 95%;
-  }
-
-  .blog-post p,
-  .blog-post ol,
-  .sources-container span {
-    font-size: 15px;
+    width: 90%;
   }
 
   .blog-post h1 {
-    font-size: 25px;
-  }
-
-  .blog-post ol {
-    margin-left: -20px;
+    font-size: 26px;
   }
 
   .blog-quote {
-    margin: 0 0 10px 0;
+    margin: 10px auto;
+    width: 300px;
   }
 
   .footer {
-    font-size: 15px;
+    font-size: 14px;
     width: 100%;
   }
 
@@ -286,8 +277,32 @@ iframe {
   }
 
   .social-media i {
-    font-size: 30px;
     margin: 0 20px;
     text-shadow: none;
+  }
+
+  .social-media i:hover {
+    color: #B22222;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .blog-post p,
+  .blog-post h1,
+  .blog-post ol,
+  .social-media,
+  .sources-container {
+    width: 95%;
+  }
+
+  .blog-quote {
+    margin: 0;
+    outline: none;
+    width: 100%;
+  }
+
+  .social-media i {
+    font-size: 34px;
   }
 }

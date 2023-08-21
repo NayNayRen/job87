@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -12,12 +10,11 @@
 
 .about {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/books.jpeg");
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.9)),
     url("../img/books.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)),
     url("../img/books.jpeg");
   background-position: center;
   background-size: cover;
@@ -31,18 +28,8 @@
 }
 
 .blog {
-  background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/blog.jpeg");
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.9)),
-    url("../img/blog.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/blog.jpeg");
-  background-position: center;
-  background-size: cover;
   border-top: solid 1px #fff;
-  margin-bottom: 75px;
+  padding: 75px 0;
 }
 
 .blog-admin {
@@ -157,7 +144,7 @@
 
 body {
   background-color: #000;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   position: relative;
 }
 
@@ -166,13 +153,13 @@ body {
 }
 
 .fa-arrow-down {
-  color: rgb(220, 20, 60);
+  color: #B22222;
   font-size: 30px;
   margin-top: -20px;
 }
 
 .fa-flag-o {
-  color: rgb(220, 20, 60);
+  color: #B22222;
   margin: 0 20px;
 }
 
@@ -204,27 +191,9 @@ h3 {
   font-size: 50px;
 }
 
-iframe {
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
-  border: solid 1px #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
-  height: 350px;
-  width: 600px;
-}
-
 .innovation {
-  background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/innovation.jpg");
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.9)),
-    url("../img/innovation.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/innovation.jpg");
-  background-position: center;
-  background-size: cover;
   border-top: solid 1px #fff;
-  margin-bottom: 75px;
+  padding: 75px 0;
 }
 
 .innovation a {
@@ -232,9 +201,9 @@ iframe {
   color: rgba(0, 102, 255, 1);
   font-size: 25px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #000, 0px -1px 0px #000, 1px 0px 0px #000,
-    -1px 0px 0px #000;
+  text-shadow: 0px 2px 5px #000;
   transition: opacity 150ms ease;
+  /* outline: solid 1px red; */
 }
 
 .innovation a:hover {
@@ -244,16 +213,15 @@ iframe {
 
 .intro {
   background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/books.jpeg");
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.9)),
     url("../img/books.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)),
     url("../img/books.jpeg");
   background-position: center;
   background-size: cover;
-  margin-bottom: 75px;
+  padding: 100px 0 75px 0;
 }
 
 .intro button {
@@ -313,7 +281,6 @@ iframe {
 }
 
 .intro,
-.landing,
 .blog,
 .podcast,
 .portfolio,
@@ -325,14 +292,11 @@ iframe {
   align-items: center;
   color: #fff;
   height: 100%;
-  padding-bottom: 10px;
   text-align: center;
-  text-shadow: -1px 1px 1px #000, 1px 1px 1px #000, 1px -1px 0 #000,
-    -1px -1px 0 #000, 0px 0px 20px #000;
+  text-shadow: 0 2px 5px #000;
 }
 
 .intro p,
-.landing p,
 .blog p,
 .podcast p,
 .portfolio p,
@@ -344,23 +308,9 @@ iframe {
   width: 75%;
 }
 
-.landing {
-  padding-top: 100px;
-}
-
 .learning {
-  background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/book.jpeg");
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.9)),
-    url("../img/book.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/book.jpeg");
-  background-position: center;
-  background-size: cover;
   border-top: solid 1px #fff;
-  margin-bottom: 75px;
+  padding: 75px 0;
 }
 
 .learning a {
@@ -373,9 +323,12 @@ iframe {
   font-size: 25px;
   list-style-type: none;
   margin: 20px 0;
-  text-shadow: 0px 1px 0px #000, 0px -1px 0px #000, 1px 0px 0px #000,
-    -1px 0px 0px #000;
+  text-shadow: 0 2px 5px #000;
   transition: all 150ms ease;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  /* outline: solid 1px red; */
 }
 
 .learning ol {
@@ -394,9 +347,19 @@ iframe {
 
 .learning li:hover {
   color: #fff;
+  transform: scale(1.1)
 }
 
 .main {
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 1)),
+    url("../img/book.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 1)),
+    url("../img/book.jpeg");
+  background-position: center;
+  background-size: cover;
   min-height: 100%;
 }
 
@@ -432,7 +395,6 @@ iframe {
 .nav-link {
   -webkit-transition: color 150ms ease;
   color: #fff;
-  font-family: "Ubuntu", sans-serif;
   font-size: 25px;
   margin: 0 15px;
   text-decoration: none;
@@ -445,19 +407,8 @@ iframe {
 }
 
 .podcast {
-  background-attachment: fixed;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/podcast.jpeg");
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.9)),
-    url("../img/podcast.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9)),
-    url("../img/podcast.jpeg");
-  background-position: center;
-  background-size: cover;
   border-top: solid 1px #fff;
-  margin-bottom: 75px;
-  padding-bottom: 50px;
+  padding: 75px 0;
 }
 
 .podcast i {
@@ -479,16 +430,12 @@ iframe {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   align-items: center;
-  background-attachment: fixed;
-  background-image: url("../img/portfolio.jpeg");
-  background-position: center;
-  background-size: cover;
   border-top: solid 1px #fff;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   flex-direction: column;
-  margin-bottom: 75px;
+  padding: 75px 0;
 }
 
 .portfolio-link {
@@ -527,10 +474,9 @@ iframe {
 
 .social-media-container i {
   -webkit-transition: all 150ms ease;
-  color: rgb(227, 24, 55);
+  color: #B22222;
   font-size: 45px;
-  text-shadow: 0px 1px 0px #000, 0px -1px 0px #000, 1px 0px 0px #000,
-    -1px 0px 0px #000;
+  text-shadow: 0px 2px 5px #000;
   transition: all 150ms ease;
 }
 
@@ -548,7 +494,9 @@ iframe {
   align-items: center;
   background-color: #fff;
   border-radius: 50%;
-  border: solid 1px #000;
+  /* border: solid 1px #000; */
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   bottom: 10px;
   color: #000;
   display: -ms-flexbox;
@@ -570,7 +518,7 @@ iframe {
   }
 
   .container-title {
-    font-size: 65px;
+    font-size: 55px;
   }
 
   h3 {
@@ -578,7 +526,6 @@ iframe {
   }
 
   .intro p,
-  .landing p,
   .blog p,
   .podcast p,
   .portfolio p,
@@ -602,8 +549,25 @@ iframe {
     width: 100%;
   }
 
+  .blog,
+  .podcast,
+  .portfolio,
+  .innovation,
+  .learning,
+  .about {
+    padding: 25px 0;
+  }
+
+  .blog-container img:hover {
+    transform: none;
+  }
+
   .blog-link {
     font-size: 18px;
+  }
+
+  .container-title {
+    font-size: 45px;
   }
 
   .fa-flag-o {
@@ -622,20 +586,14 @@ iframe {
     font-size: 25px;
   }
 
-  iframe {
-    height: 300px;
-    width: 500px;
-  }
-
   .intro p,
-  .landing p,
   .blog p,
   .podcast p,
   .portfolio p,
   .innovation p,
   .learning p,
   .about p {
-    font-size: 16px;
+    font-size: 18px;
     width: 85%;
   }
 
@@ -657,11 +615,11 @@ iframe {
   }
 
   .intro label {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  .landing {
-    padding-top: 125px;
+  .intro {
+    padding: 165px 0 25px 0;
   }
 
   .learning li {
@@ -669,8 +627,13 @@ iframe {
     margin: 10px 0;
   }
 
-  .learning ol {
+  /* .learning ol {
     text-align: left;
+  } */
+
+  .learning li:hover {
+    color: #fff;
+    transform: scale(1)
   }
 
   .nav-box {
@@ -678,13 +641,13 @@ iframe {
     border-radius: 0;
     border-right: none;
     border-top: none;
-    /* padding: 5px 10px; */
+    box-shadow: none;
     top: 0;
     width: 100%;
   }
 
   .nav-link {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .portfolio-link {
@@ -697,10 +660,13 @@ iframe {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -webkit-box-pack: center;
+    background-color: #000;
+    border-bottom: solid 1px #fff;
     flex-direction: row;
     justify-content: center;
     left: 0;
-    top: 100px;
+    padding: 25px 0 15px 0;
+    top: 85px;
     width: 100%;
   }
 
@@ -712,16 +678,16 @@ iframe {
 
 @media (max-width: 400px) {
   .about img {
-    max-width: 200px;
+    width: 200px;
   }
 
   .blog-admin {
     font-size: 14px;
   }
 
-  .blog-container img:hover {
+  /* .blog-container img:hover {
     transform: none;
-  }
+  } */
 
   .blog-container span:nth-child(even) {
     border-left: none;
@@ -755,28 +721,23 @@ iframe {
     margin: 0 5px;
   }
 
-  iframe {
-    height: 200px;
-    width: 350px;
-  }
-
   .innovation a {
     font-size: 16px;
   }
 
-  .landing {
-    padding-top: 150px;
+  .intro {
+    padding: 185px 0 25px 0;
   }
 
-  .learning li {
+  /* .learning li {
     font-size: 16px;
-  }
+  } */
 
   .portfolio-link {
     font-size: 18px;
   }
 
   .social-media-container {
-    top: 125px;
+    top: 110px;
   }
 }
