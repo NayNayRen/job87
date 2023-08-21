@@ -19,6 +19,7 @@
   background-position: center;
   background-size: cover;
   border-top: solid 1px #fff;
+  padding: 75px 0;
   position: relative;
 }
 
@@ -27,7 +28,7 @@
   border: solid 1px #fff;
   display: flex;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
   width: 350px;
 }
 
@@ -537,6 +538,7 @@ h3 {
 }
 
 @media (max-width: 1300px) {
+
   .blog-link {
     font-size: 20px;
   }
