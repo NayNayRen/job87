@@ -110,7 +110,6 @@
   grid-template-columns: 60% 40%;
   height: 275px;
   margin: 20px;
-  padding: 5px;
   width: 650px;
 }
 
@@ -739,7 +738,6 @@ h3 {
     border-right: none;
     grid-template-columns: 100%;
     margin: 15px 0;
-    padding: 0;
     width: 100%;
   }
 
